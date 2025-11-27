@@ -198,6 +198,11 @@ public class ArrCharOps {
         // Replace the following statement with your code
         int len1 = str1.length();
         int len2 = str2.length();
+
+        if (len1 == 0 || len2 == 0) {
+            return -2; 
+        }
+
         int minLen = Math.min(len1, len2);
 
         for (int i = 0; i < minLen; i++) {
@@ -208,15 +213,15 @@ public class ArrCharOps {
                 return -1;
             } else if (ch1 > ch2) {
                 return 1;
-            }     
+            }
         }
 
         if (len1 == len2) {
             return 0;
         } else if (len1 < len2) {
-            return -1; // str1 קצר יותר, ולכן קטן יותר
+            return -1;
         } else { 
-            return 1; // str1 ארוך יותר, ולכן גדול יותר
+            return 1;
         }
     }
 }
