@@ -59,7 +59,7 @@ public class Primes {
             }
         }
         
-        int rangeSize = n - 1; 
+        int rangeSize = n; 
         
         double percentage = 0.0;
         if (rangeSize > 0) {
